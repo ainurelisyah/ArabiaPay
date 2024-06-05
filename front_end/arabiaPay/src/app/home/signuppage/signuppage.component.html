@@ -1,0 +1,55 @@
+<app-headerpage></app-headerpage>
+
+<div class="page-wrapper">
+  <div class="signup-container surface-card p-4 shadow-2 border-round w-full lg:w-6 mx-auto">
+    <div class="text-center mb-5">
+      <img src="assets/images/ArabiaPay.png" alt="Image" height="200" class="mb-0">
+      <div class="mb-3 font-bold text-3xl">
+        <span class="text-900">Create your </span>
+        <span class="text-red-600">ArabiaPay</span> Account
+      </div>
+    </div>
+
+    <form [formGroup]="signupUserForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input id="username" formControlName="username" type="text" class="form-control" placeholder="Enter your username" pInputText class="w-full mb-1" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input id="password" formControlName="password" type="password" class="form-control" placeholder="Enter your password" pInputText class="w-full mb-1" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" formControlName="email" type="email" class="form-control" placeholder="Enter your email" pInputText class="w-full mb-1" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="phone_no" class="form-label">Phone Number</label>
+        <input id="phone_no" formControlName="phone_no" type="text" class="form-control" placeholder="Enter your phone number" pInputText class="w-full mb-1" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Select User Type</label>
+        <select formControlName="user_type" class="form-control" pInputText class="w-full mb-1" required>
+          <option disabled selected value="">Select Type User Below :</option>
+          <option value="client">Client</option>
+          <option value="vendor">Vendor</option>
+        </select>
+      </div>
+
+      <button type="submit" pButton pRipple label="Sign Up" class="w-full p-button p-ripple p-button-primary"></button>
+    </form>
+
+    <div class="text-center mt-3">
+      <span class="text-600 font-medium line-height-3">Already have an account?</span>
+      <a class="font-medium no-underline ml-2 text-white-500 cursor-pointer" (click)="goToLoginpage()">Login now!</a>
+    </div>
+  </div>
+
+  <footer>
+    <app-footerpage></app-footerpage>
+  </footer>
+</div>

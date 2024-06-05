@@ -1,0 +1,52 @@
+<header><app-adminheader></app-adminheader></header>
+
+<div class="page-wrapper">
+    <div class="page-container surface-card p-4 shadow-2 border-round w-full lg:w-10 mx-auto">
+    <b style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
+        <p style="margin: 0; font-size: 23px;font-weight: bold;">USER LIST</p>
+        <p style="margin: 0;" >
+            <button type="button" class="btn btn-primary rounded-pill shadow" style="background-color: #007BFF; background-color: #007BFF; color: #fff; border: none;  border-radius: 5px; padding: 10px 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  cursor: pointer; outline: none; ">
+                Add
+            </button>
+                        
+        </p>
+        
+    </b>
+<div class="card">
+    <p-table [value]="users" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+            <tr style="text-align: left;">
+            <th>No.</th>
+            <th>Username</th>
+            <th>Role</th>
+            <th style="text-align: center;  width: 10px;">Action</th>
+           
+        </tr>
+        
+    </ng-template>
+    <ng-template pTemplate="body" let-user let-i="rowIndex">
+            
+        <tr style="text-align: left;">
+            <td>{{ i + 1 }}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.level}}</td>
+            <td>
+                <div class="btn-group p-2"  style="display: flex; padding: 2rem; justify-content: space-between;"  role="group" aria-label="Product Actions"> 
+                    <button type="button" class="btn btn-danger" style="background-color: #DC3545; color: #fff; border: none;  border-radius: 5px; padding: 10px 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  cursor: pointer; outline: none;">
+                        Delete
+                    </button>
+                    <div><p style="width: 10px;">  </p> </div>
+                    <button type="button" class="btn btn-bright-success" style="background-color: #28A745; color: #fff; border: none;  border-radius: 5px; padding: 10px 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  cursor: pointer; outline: none;">
+                        Update
+                    </button>
+                </div>                    
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
+</div>
+</div>
+<footer>
+    <app-footerpage></app-footerpage>
+  </footer>
+</div>

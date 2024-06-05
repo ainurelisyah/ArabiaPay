@@ -1,0 +1,41 @@
+<app-headerpage></app-headerpage>
+
+<div class="page-wrapper">
+  <div class="login-container surface-card p-4 shadow-2 border-round w-full lg:w-6 mx-auto">
+    <div class="text-center mb-5">
+      <img src="assets/images/ArabiaPay.png" alt="Image" height="200" class="mb-0">
+      <div class="mb-3 font-bold text-3xl">
+        <span class="text-900">Welcome back to </span>
+        <span class="text-red-600">ArabiaPay</span>
+      </div>
+      <span class="text-600 font-medium line-height-3">Don't have an account?</span>
+      <a class="font-medium no-underline ml-2 text-white-500 cursor-pointer" (click)="goToSignUpPage()">Create now! </a>
+    </div>
+
+    <div>
+      <form [formGroup]="loginUserForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input id="username" formControlName="username" type="text" class="form-control" placeholder="Enter your username" pInputText class="w-full mb-1" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="password1" class="form-label">Password</label>
+          <input id="password1" formControlName="password" type="password" class="form-control" placeholder="Enter your password" pInputText class="w-full mb-1" required>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="rememberme1">
+          <label class="form-check-label" for="rememberme1">Remember me</label>
+          <a class="font-medium no-underline ml-2 text-white-500 text-right cursor-pointer" (click)="goToForgotPage()">Forgot password?</a>
+        </div>
+
+        <button type="submit" pButton pRipple label="Login" icon="pi pi-user" class="w-full btn btn-primary"></button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <app-footerpage></app-footerpage>
+  </footer>
+</div>

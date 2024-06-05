@@ -1,0 +1,69 @@
+<header><app-adminheader></app-adminheader></header>
+
+<div class="page-wrapper" >
+    <div class="page-container surface-card p-4 shadow-2 border-round w-full lg:w-10 mx-auto" style="min-width: 500px; ">
+    <b style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
+        <p style="margin: 0; font-size: 23px;font-weight: bold;">TRANSACTION HISTORY</p>
+
+    </b>
+<div class="card" style="min-height: 400px;">
+    <p-table [tableStyle]="{ 'min-width': '50rem'}">
+        <ng-template pTemplate="header">
+            <tr style="text-align: left;">
+            <th>No.</th>
+            <th>Ewallet No</th>
+            <th>Receiver</th>
+            <th>Details</th>
+            <th>Total</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th style="text-align: center;  width: 10px;">Action</th>
+           
+        </tr>
+        <tr style="text-align: left;">
+            <td style="text-align: center;">1</td>
+            <td>372636797191</td>
+            <td>887636722233</td>
+            <td>transfer ewallet to ewallet number : 53678289299</td>
+            <td>40.00</td>
+            <td>2024-03-05</td>
+            <td>Success</td>
+            <td>
+                <div class="btn-group p-2"  style="display: flex; padding: 2rem; justify-content: space-between;"  role="group" aria-label="Product Actions"> 
+                    <div><p style="width: 10px;">  </p> </div>
+                    <button type="button" class="btn btn-bright-success" style="background-color: #ffc107; color: #fff; border: none;  border-radius: 5px; padding: 10px 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  cursor: pointer; outline: none;">
+                        View
+                    </button>
+                </div>                    
+            </td>
+        </tr>
+        <tr style="text-align: left;">
+            <td style="text-align: center;">2</td>
+            <td>37263679322</td>
+            <td>Umobile</td>
+            <td>buying: pospaid</td>
+            
+            <td>40.00</td>
+            <td>2024-03-05</td>
+            <td>Success</td>
+            <td>
+                <div class="btn-group p-2"  style="display: flex; padding: 2rem; justify-content: space-between;"  role="group" aria-label="Product Actions"> 
+                    <div><p style="width: 10px;">  </p> </div>
+                    <button type="button" class="btn btn-bright-success" style="background-color: #ffc107; color: #fff; border: none;  border-radius: 5px; padding: 10px 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  cursor: pointer; outline: none;">
+                        View
+                    </button>
+                </div>                    
+            </td>
+        </tr>
+        
+    </ng-template>
+    <ng-template pTemplate="body">
+        
+    </ng-template>
+</p-table>
+</div>
+</div>
+<footer>
+    <app-footerpage></app-footerpage>
+  </footer>
+</div>

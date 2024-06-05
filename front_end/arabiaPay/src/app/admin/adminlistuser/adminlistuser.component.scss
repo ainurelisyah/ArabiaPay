@@ -1,0 +1,43 @@
+.page-container {
+    background-color: #f0f0f0; /*Set your desired background color */
+    /* OR */
+    /*background-image: url('src/assets/images/bgpic.jpeg'); 
+  
+    /* Add more styling as needed */
+  }
+
+  .page-wrapper {
+    /*background-color: #f0f0f0; /* Set your desired background color */
+    /* OR */
+    background-image: url("/assets/images/bgpic.jpeg"); 
+    max-width: 5000px; 
+    margin: 0 auto;
+  
+    /* Add more styling as needed */
+  }
+
+/* Add this to your custom stylesheet or SCSS */
+.btn-bright-primary {
+  background-color: #007BFF; /* Adjust the color code to your desired brighter color */
+  color: #fff; /* Set text color to white or a contrasting color */
+  /* Add any other styling as needed */
+}
+
+.btn-bright-success {
+  background-color: #28A745; /* Adjust the color code to your desired brighter color */
+  color: #fff; /* Set text color to white or a contrasting color */
+  /* Add any other styling as needed */
+}
+
+.btn-bright-danger {
+  background-color: #DC3545; /* Adjust the color code to your desired brighter color */
+  color: #fff; /* Set text color to white or a contrasting color */
+  /* Add any other styling as needed */
+}
+
+.btn-bright-warning {
+  background-color: #ffc107; /* Adjust the color code to your desired brighter color */
+  color: #fff; /* Set text color to white or a contrasting color */
+  /* Add any other styling as needed */
+}
+

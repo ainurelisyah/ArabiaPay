@@ -1,0 +1,56 @@
+
+
+<app-userheader></app-userheader>
+<p></p>
+
+<div class="page-wrapper">
+  <div class="page-container surface-card p-4 shadow-2 border-round w-full lg:w-6 mx-auto">
+    <div class="text-center mb-5">
+        <img src="assets/images/ArabiaPay.png" alt="Image" height="200" class="mb-0">
+        <div class="mb-1 font-bold text-3xl">
+          <span class="text-900">Account Balance </span>
+        </div>
+        <div class="mb-1 font-bold text-3xl">
+          <span class="text-red-600">RM1513.00</span>
+        </div>
+        <div>
+        <span class="text-600 font-medium line-height-3">Qard Saving Account-i</span>
+        </div>
+        <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer">123456789</a>
+    </div>
+
+    <div>
+        <label for="amount" class="block text-900 font-medium mb-2">Enter Amount</label>
+        <input id="amount" type="text" placeholder="RM 0.00" pInputText class="w-full mb-3" required>
+
+        <label for="transfer" class="block text-900 font-medium mb-2">Transfer To</label>
+        <input id="transfer" type="text" placeholder="Ewallet Account" pInputText class="w-full mb-3" disabled>
+
+        <label for="transfer" class="block text-900 font-medium mb-2">Recipient E-Wallet</label>
+        <select name="transfer" class = "form-select" pInputText class="w-full mb-3" required>
+            <option disabled selected value="">Select Recipient Ewallet</option>
+            <option>Puteri Idayu Zulaikha</option>
+            <option>Haikal Shamsudin</option>
+            <option>Ainur Elisyah</option>
+          </select>
+
+        <label for="transactiontype" class="block text-900 font-medium mb-2">Transfer Type</label>
+        <select name="transactiontype" class = "form-select" pInputText class="w-full mb-3" required>
+            <option disabled selected value="">Select</option>
+            <option>Fund Transfer</option>
+            <option>Loan Payment</option>
+            <option>Credit Card</option>
+          </select>
+
+        <label for="accountNumber" class="block text-900 font-medium mb-2">Ewallet Number</label>
+        <input id="accountNumber" type="text" placeholder="Enter Recipient Ewallet Number" pInputText class="w-full mb-3" required>
+        
+        <button pButton pRipple label="Pay Now" icon="pi pi-check" class="w-full" class="w-full" (click)="navigateToUserinvoice()"></button>
+      
+      </div>
+</div>
+
+
+<footer>
+    <app-footerpage></app-footerpage>
+  </footer>
